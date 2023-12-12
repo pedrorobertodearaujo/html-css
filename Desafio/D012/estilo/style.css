@@ -1,14 +1,26 @@
 @charset "UTF8";
 
+@import url('https://fonts.googleapis.com/css2?family=Passion+One:wght@400;700;900&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Comic+Neue:ital,wght@0,700;1,700&display=swap');
+
+:root{
+    --fonte1: Verdana, Geneva, tahoma, sans-serif;
+    --fonte2: 'Passion One', sans-serif;
+    --fonte3: 'Comic Neue', 'cursive';
+
+}
 *{
     margin: 0px;
     padding: 0px;
+    font-size: 1em;
 
 }
 
 html, body{
     min-height: 100vh;
     background-color: darkgray;
+    font-family: var(--fonte1);
 
 
 }
@@ -17,12 +29,15 @@ header{
     color: white;
     text-align: center;
 
+
 }
 
 header > h1{
     padding-top: 50px ;
    
     font-variant: small-caps;
+    font-family: var(--fonte2);
+    font-size: 10vw;
 
 
 }
@@ -46,6 +61,10 @@ section{
     padding-bottom: 10vh;
     line-height: 2em;
     padding-left: 30px;
+    font-family: var(--fonte3);
+    font-size: 3.5vw;
+    
+    
     
 
 }
@@ -67,7 +86,8 @@ section.imagem{
 }
 section.imagem > p{
     background-color: rgb(92, 92, 92) ;
-    width: 400px;
+    display: inline-block;
+    padding: 5px;
 
 }
 
